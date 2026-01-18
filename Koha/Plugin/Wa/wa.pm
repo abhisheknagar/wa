@@ -17,8 +17,8 @@ use Mojo::JSON qw(encode_json decode_json);
 use YAML::XS qw(Load);
 
 ## Here we set our plugin version
-our $VERSION         = "{VERSION}";
-our $MINIMUM_VERSION = "{MINIMUM_VERSION}";
+our $VERSION         = "1.0";
+our $MINIMUM_VERSION = "23.05";
 
 our $metadata = {
     name            => 'WhatsApp Plugin using Gupshup API',
