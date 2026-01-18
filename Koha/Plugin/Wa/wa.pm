@@ -21,7 +21,7 @@ our $VERSION         = "1.0";
 our $MINIMUM_VERSION = "23.05";
 
 our $metadata = {
-    name            => 'WhatsApp Plugin using Gupshup API',
+    name            => 'SMS Plugin to POST Notices to an endpoint',
     author          => 'Abhishek Nagar',
     date_authored   => '2026-01-18',
     date_updated    => "2026-01-18",
@@ -29,7 +29,7 @@ our $metadata = {
     maximum_version => undef,
     version         => $VERSION,
     description =>
-      'Plugin to forward Notices to an Endpoint which can process and send via WhatsApp',
+      'Plugin to forward Notices to an Endpoint which can process and send via WhatsApp Telegram etc',
 };
 
 =head3 new
