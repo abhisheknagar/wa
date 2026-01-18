@@ -1,0 +1,34 @@
+[% USE Dumper %]
+[% USE KohaDates %]
+[% INCLUDE 'doc-head-open.inc' %]
+ <title>Koha: WA plugin: Configuration</title>
+[% INCLUDE 'doc-head-close.inc' %]
+</head>
+<body>
+[% INCLUDE 'header.inc' %]
+[% INCLUDE 'cat-search.inc' %]
+
+<div id="breadcrumbs"><a href="/cgi-bin/koha/mainpage.pl">Home</a> &rsaquo; <a href="/cgi-bin/koha/plugins/plugins-home.pl">Plugins</a> &rsaquo; Podium &rsaquo; Configuration</div>
+
+<div id="container-main" class="container-fluid">
+    <form method="get">
+      <input type="hidden" name="class" value="[% CLASS %]"/>
+      <input type="hidden" name="method" value="[% METHOD %]"/>
+      <input type="hidden" name="save" value="1" />
+
+      <div class="form-group">
+        <label for="location_id">Api Key</label>
+        <input type="text" name="api_key" class="form-control" value="[% api_key %]">
+        <small class="form-text text-muted">API Key of Endpoint</small>
+      </div>
+
+      <div class="form-group">
+        <label for="api_endpoint">API Endpoint</label>
+        <input type="text" name="api_endpoint" class="form-control" value="[% api_endpoint %]">
+        <small class="form-text text-muted">API endpoint  provided by Endpoint</small>
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+[% INCLUDE 'intranet-bottom.inc' %]
